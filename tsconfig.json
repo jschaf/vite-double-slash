@@ -15,6 +15,10 @@
     "noEmit": true,
     "jsx": "react",
     "baseUrl": "./",
+    "paths": {
+      // Allow imports like: "import * as pbts from '//base/proto/pbts/pbts';"
+      "//*": ["./*"]
+    }
   },
   "include": ["./src"],
 }
